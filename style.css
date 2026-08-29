@@ -1,0 +1,177 @@
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    font-family: "Varela Round", sans-serif;
+}
+
+body .head_container,
+body .hero,
+body .footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+button {
+    background-color: #E0163D;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    /* background-color: #06B6D4; */
+    animation: pulse .8s infinite;
+}
+
+.header_right a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+a:hover {
+    color: aqua;
+}
+
+.head_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.header_right {
+    display: flex;
+    gap: 15px;
+    padding-right: 40px;
+}
+
+.hero {
+    color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 30px;
+    flex-wrap: nowrap;
+
+}
+
+.herogreet {
+    max-width: 500px;
+    flex: 0 1 auto;
+
+}
+
+.herogreet h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.herogreet p {
+    color: #E5E7EB;
+    max-width: 500px;
+    /* width: 60%; */
+}
+
+.heroimage {
+    flex: 0 0 auto;
+}
+
+.heroimage img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    /* object-fit: cover; */
+}
+
+.subhero {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subh11 {
+    padding: 20px;
+}
+
+
+.subhero_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.subhero_items img {
+    height: 200px;
+    width: 200px;
+    border: solid rgb(0, 110, 255) 5px;
+    border-radius: 20%;
+}
+
+.subhero_items p {
+    max-width: 200px;
+}
+
+.quotedan {
+    background-color: rgb(199, 196, 196);
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    padding-inline: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ctafollow {
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.ctamessage {
+    background-color:#1F2937;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer {
+    padding: 30px;
+    text-align: center;
+}
+
+/* keyframes */
+
+@keyframes pulse {
+    0% { 
+        transform: scale(1);
+        box-shadow: 0 0 0px #e03c5d; 
+    }
+    50% { 
+        transform: scale(1.05);
+        box-shadow: 0 0 15px #e03c5d; 
+    }
+    100% { 
+        transform: scale(1); 
+        box-shadow: 0 0 0px #e03c5d;
+    }
+}
